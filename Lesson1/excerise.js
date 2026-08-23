@@ -6,7 +6,7 @@
 // "Sản phẩm: Sách, Giá: 20,000 VNĐ"
 console.log("/*==========================================================Bai 1=================================================================================*/")
 function formatCurrency(price) {
-  return price.toLocaleString('en-US') + ' VNĐ';
+  return price.toLocaleString() + ' VNĐ';
 }
 
 const productInfo = (productName, price) => {
