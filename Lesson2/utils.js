@@ -27,6 +27,8 @@ const removeDuplicates = (arr) => {
       result.splice(result.lastIndexOf(result[i]), 1);
     }
   }
+//   let data = Array.from(new Set(arr))
+//   console.log(data)
   return result;
 };
 
@@ -49,14 +51,11 @@ const flattenArray = (arr) => {
 // Input: arr = [1, 2, 3, 2, 1]
 // Output: true
 const isSymmetric = (arr) => {
-  if (arr.length % 2 === 0) return false;
-  else {
     let index = (arr.length - 1) / 2;
     for (let i = 0; i < index; i++) {
       if (arr[i] !== arr[arr.length - 1 - i]) return false;
     }
     return true;
-  }
 };
 
 //=====================================Bai 6======================================================
